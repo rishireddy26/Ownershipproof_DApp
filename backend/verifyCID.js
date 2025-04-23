@@ -4,13 +4,13 @@ const { ethers } = require("ethers");
 const fs = require("fs");
 
 // Replace with your real Sepolia RPC URL
-const provider = new ethers.JsonRpcProvider("https://sepolia.infura.io/v3/8b776ab339ae4a53ab71f5d7bfd8e2be");
+const provider = new ethers.JsonRpcProvider(" your real Sepolia RPC URL");
 
 const abiJson = JSON.parse(fs.readFileSync("./frontend/src/abi/ContentRegistry.json", "utf8"));
 const abi = abiJson.abi;
 
-const contractAddress = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0";
-const cidToCheck = "QmSaJwbFQok4kKX9SewnWrnLXxRQk1QDJKuLNa81nNdVqi";
+const contractAddress = ""; // contract address generated in terminal  
+const cidToCheck = " " ;//replace generated cidaddress
 
 async function main() {
   try {
